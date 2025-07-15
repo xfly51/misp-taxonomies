@@ -1,0 +1,1512 @@
+{
+    "namespace": "acn",
+    "description": "Cyber taxonomy for Italian National Cybersecurity Agency (ACN)",
+    "version": 1,
+    "predicates": [
+        {
+            "value": "impact",
+            "expanded": "Impact"
+        },
+        {
+            "value": "root-cause",
+            "expanded": "Root Cause"
+        },
+        {
+            "value": "severity",
+            "expanded": "Severity"
+        },
+        {
+            "value": "victim-geography",
+            "expanded": "Victim Geography"
+        },
+        {
+            "value": "active-scanning",
+            "expanded": "Active Scanning"
+        },
+        {
+            "value": "availability",
+            "expanded": "Availability"
+        },
+        {
+            "value": "brand-abuse",
+            "expanded": "Brand Abuse"
+        },
+        {
+            "value": "fraud",
+            "expanded": "Fraud"
+        },
+        {
+            "value": "data-exposure",
+            "expanded": "Data Exposure"
+        },
+        {
+            "value": "information-gathering",
+            "expanded": "Information Gathering"
+        },
+        {
+            "value": "malicious-code",
+            "expanded": "Malicious Code"
+        },
+        {
+            "value": "social-engineering",
+            "expanded": "Social Engineering"
+        },
+        {
+            "value": "vulnerability",
+            "expanded": "Vulnerability"
+        },
+        {
+            "value": "adversary-motivation",
+            "expanded": "Adversary Motivation"
+        },
+        {
+            "value": "adversary-type",
+            "expanded": "Adversary Type"
+        },
+        {
+            "value": "abusive-content",
+            "expanded": "Abusive Content"
+        },
+        {
+            "value": "asset-source-geography",
+            "expanded": "Asset Source Geography"
+        },
+        {
+            "value": "involved-asset",
+            "expanded": "Involved Asset"
+        },
+        {
+            "value": "outlook",
+            "expanded": "Outlook"
+        },
+        {
+            "value": "physical-security",
+            "expanded": "Physical Security"
+        },
+        {
+            "value": "vector",
+            "expanded": "Vector"
+        }
+    ],
+    "values": [
+        {
+            "predicate": "impact",
+            "entry": [
+                {
+                    "value": "account-compromise",
+                    "expanded": "Account Compromise",
+                    "description": "Cyber events that have resulted in the compromise of a user account or a service account. It is possible to specify the type of compromised account using the predicate Involved asset.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "application-compromise",
+                    "expanded": "Application Compromise",
+                    "description": "Cyber events that have resulted in the compromise of an application or service, including web applications, mobile applications, databases, etc. It is possible to specify the type of application compromise using the predicate Involved asset.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "availability",
+                    "expanded": "Availability",
+                    "description": "Cyber events in which malicious activities conducted by an attacker have affected the availability of the system or service provided. The predicate Availability must also be explicitly stated.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "data-exfiltration",
+                    "expanded": "Data Exfiltration",
+                    "description": "Cyber events in which the confidentiality of information present on an IT asset has been compromised. This loss or leak of data can occur due to malicious activities or accidentally.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "data-exposure",
+                    "expanded": "Data Exposure",
+                    "description": "Unauthorized disclosure of sensitive or confidential data, caused by security vulnerabilities, configuration errors, or inadequate information management practices.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "data-manipulation",
+                    "expanded": "Data Manipulation",
+                    "description": "Cyber events in which the integrity of information present on an IT asset has been compromised. This value includes the modification or destruction of data by a malicious actor.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "no-impact",
+                    "expanded": "No Impact",
+                    "description": "A cyber event that could have compromised the availability, integrity or confidentiality of data or services, but was effectively prevented or did not occur.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "system-compromise",
+                    "expanded": "System Compromise",
+                    "description": "Cyber events that have resulted in the compromise of an IT asset, for example, by altering its integrity.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Impact that are not identifiable with the other values defined in the subset.",
+                    "colour": "#6E92A0"
+                }
+            ]
+        },
+        {
+            "predicate": "root-cause",
+            "entry": [
+                {
+                    "value": "human-errors",
+                    "expanded": "Human Errors",
+                    "description": "Events caused by an unintentional human mistake. An example is an incorrect operation that affects the intended functionality of an IT asset.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "malicious-actions",
+                    "expanded": "Malicious Actions",
+                    "description": "Any attempt to compromise the integrity, confidentiality, or availability of an IT asset.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "natural-phenomena",
+                    "expanded": "Natural Phenomena",
+                    "description": "Events caused by a natural occurrence, such as earthquakes, avalanches, and floods.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "system-failure",
+                    "expanded": "System Failure",
+                    "description": "An unforeseen event in which a system ceases to function according to its intended design specifications, resulting in a loss of service or a significant reduction in the quality of the service provided.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "third-party-failure",
+                    "expanded": "Third Party Failure",
+                    "description": "Interruption or degradation of the performance of a primary system attributable to malfunctions or failures of services provided by third parties.",
+                    "colour": "#6E92A0"
+                }
+            ]
+        },
+        {
+            "predicate": "severity",
+            "entry": [
+                {
+                    "value": "high",
+                    "expanded": "High",
+                    "description": "The organization is no longer able to provide essential services to users; or personal or proprietary data/information has been modified, deleted, or exfiltrated; or recovery from the incident is not possible.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "medium",
+                    "expanded": "Medium",
+                    "description": "The organization is able to provide an essential service only to a portion of its users; or access to and exfiltration of personal or proprietary data/information has been detected; or recovery is possible, but the timeframe is unknown.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "low",
+                    "expanded": "Low",
+                    "description": "The organization can still provide essential services to all users, but they are not optimal in terms of efficiency; or access to sensitive or proprietary data/information has been detected; or recovery is possible within a known timeframe, even with additional resources.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "none",
+                    "expanded": "None",
+                    "description": "No effect on the organization's ability to provide services to users; or no information has been subject to unauthorized access, exfiltration, modification, or deletion; or the time required for recovery is predictable with existing resources.",
+                    "colour": "#6E92A0"
+                }
+            ]
+        },
+        {
+            "predicate": "victim-geography",
+            "entry": [
+                {
+                    "value": "italy",
+                    "expanded": "Italy",
+                    "description": "The cyber event has impacted IT assets located within Italy.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "africa",
+                    "expanded": "Africa",
+                    "description": "The cyber event has impacted IT assets geographically located in the African continent",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "america",
+                    "expanded": "America",
+                    "description": "The cyber event has impacted IT assets geographically located in the American continent.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "antarctica",
+                    "expanded": "Antarctica",
+                    "description": "The cyber event has impacted IT assets geographically located in the Antarctic continent.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "asia",
+                    "expanded": "Asia",
+                    "description": "The cyber event has impacted IT assets geographically located in the Asian continent.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "europe",
+                    "expanded": "Europe",
+                    "description": "The cyber event has impacted IT assets geographically located in the European continent.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "oceania",
+                    "expanded": "Oceania",
+                    "description": "The cyber event has impacted IT assets located within the Oceanic continent.",
+                    "colour": "#6E92A0"
+                },
+                {
+                    "value": "global",
+                    "expanded": "Global",
+                    "description": "The cyber event has impacted IT assets distributed across multiple countries or that it has a potentially global impact.",
+                    "colour": "#6E92A0"
+                }
+            ]
+        },
+        {
+            "predicate": "active-scanning",
+            "entry": [
+                {
+                    "value": "credential-scanning",
+                    "expanded": "Credential Scanning",
+                    "description": "Cyber events in which a malicious actor performs an active scan to detect weak or improperly configured authentication credentials, or credentials exposed on an IT asset.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "network-scanning",
+                    "expanded": "Network Scanning",
+                    "description": "Cyber events in which a malicious actor uses techniques and procedures aimed at identifying the presence of services running on remote IT assets or on assets connected to the target infrastructure.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "vulnerability-scanning",
+                    "expanded": "Vulnerability Scanning",
+                    "description": "Cyber events in which a malicious actor uses techniques and procedures specifically aimed at identifying vulnerabilities present in an IT asset in order to map the attack surface.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Active scanning that are not identifiable with the other values defined in the subset.",
+                    "colour": "#F07930"
+                }
+            ]
+        },
+        {
+            "predicate": "availability",
+            "entry": [
+                {
+                    "value": "data-encryption",
+                    "expanded": "Data Encryption",
+                    "description": "Cyber events in which a malicious actor applies encryption algorithms to data in a compromised computer system without the owner's consent, in order to render it inaccessible.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "ddos",
+                    "expanded": "DDoS",
+                    "description": "Cyber events in which a malicious actor launches an attack from multiple, distributed sources, with the aim of compromising the availability of a computing asset or service by exhausting its network, processing, or memory resources.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "dos",
+                    "expanded": "DoS",
+                    "description": "Cyber events in which a malicious actor launches an attack aimed at compromising the availability of a computing asset or service by exhausting its network, processing, or memory resources.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "misconfiguration",
+                    "expanded": "Misconfiguration",
+                    "description": "Non-malicious cyber events in which an incorrect or suboptimal configuration of a computer asset or its component has compromised the availability of a service. ",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "outage",
+                    "expanded": "Outage",
+                    "description": "Non-malicious cyber events in which a total or partial loss of availability of a computer asset has been observed due to natural or human-caused events. ",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events in which a loss of availability of a computer asset or application is encountered due to a cause that does not fall within those indicated in the other values associated with the Availability predicate.",
+                    "colour": "#F07930"
+                }
+            ]
+        },
+        {
+            "predicate": "brand-abuse",
+            "entry": [
+                {
+                    "value": "account-impersonation",
+                    "expanded": "Account Impersonation",
+                    "description": "The activity in which a malicious actor impersonates another person, system, or organization in order to deceive the victim and gain unauthorized access to sensitive information.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "cybersquatting",
+                    "expanded": "Cybersquatting",
+                    "description": "Registering and abusively using an Internet domain name that is identical or similar to registered trademarks, service names, personal or corporate names, with the malicious intent of diverting traffic to other sites.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "name-logo-impersonation",
+                    "expanded": "Name Logo Impersonation",
+                    "description": "Deliberate act of fraudulently replicating or imitating the name/logo of a recognized entity, such as a reputable organization or well-known service, with the intent to deceive the victim.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "typosquatting",
+                    "expanded": "Typosquatting",
+                    "description": "When a malicious actor deliberately registers domain names which mimic existing websites with slight spelling variations, exploiting typing errors.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events pertaining to Brand abuse that are not identifiable with the other values defined within the subset.",
+                    "colour": "#F07930"
+                }
+            ]
+        },
+        {
+            "predicate": "fraud",
+            "entry": [
+                {
+                    "value": "brand-abuse",
+                    "expanded": "Brand Abuse",
+                    "description": "Fraudulent activity in which a malicious actor exploits the notoriety of an organization to create fake websites, false advertising campaigns, or false partnerships with the purpose of damaging its reputation or conducting cybercrime activities.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "extortion",
+                    "expanded": "Extortion",
+                    "description": "A criminal activity in which an attacker exerts coercion on an individual or organization to obtain financial benefits or other forms of compensation. This conduct is carried out through the threat of causing damage or disclosing sensitive information.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "masquerade",
+                    "expanded": "Masquerade",
+                    "description": "A fraudulent activity in which a malicious actor assumes the identity of another user, device, or entity within a network or computer system in order to circumvent security mechanisms and gain unauthorized access to resources or computer assets.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "resource-misuse",
+                    "expanded": "Resource Misuse",
+                    "description": "Cyber events in which a malicious actor has exploited the resources of a computer or network in an unauthorized manner for illicit purposes.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "spam",
+                    "expanded": "Spam",
+                    "description": "Cyber events in which a malicious actor sends unsolicited or unwanted advertising messages, generally of a commercial nature.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events pertaining to the Fraud predicate that are not identifiable with the other values defined within the subset.",
+                    "colour": "#F07930"
+                }
+            ]
+        },
+        {
+            "predicate": "data-exposure",
+            "entry": [
+                {
+                    "value": "authentication-data",
+                    "expanded": "Authentication Data",
+                    "description": "Cyber events in which a security breach of data pertaining to the authentication of users of the impacted information asset, such as usernames and passwords, has been identified.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "business-data",
+                    "expanded": "Business Data",
+                    "description": "Cyber events in which a security breach of data pertaining to the company, such as data on its activities, its contracts, intellectual property, etc., has been identified.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "financial-data",
+                    "expanded": "Financial Data",
+                    "description": "Cyber events in which a security breach of data pertaining to the company's financial sphere, such as income, expenses, financial transaction data, etc., has been identified.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "personal-data",
+                    "expanded": "Personal Data",
+                    "description": "Cyber events in which a security breach of personal data has occurred, that is, information that directly or indirectly identifies or makes identifiable a physical person.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Information disclosure that are not identifiable by the other values defined in the subset.",
+                    "colour": "#F07930"
+                }
+            ]
+        },
+        {
+            "predicate": "information-gathering",
+            "entry": [
+                {
+                    "value": "active-scanning",
+                    "expanded": "Active Scanning",
+                    "description": "Cyber events in which a malicious actor attempts to gather information through an active scan, that is, through direct contact with the target information asset.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "sniffing",
+                    "expanded": "Sniffing",
+                    "description": "Cyber events in which an unauthorized actor uses techniques or tools to capture network packets for the purpose of stealing data, monitoring network activity, and gathering information.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "social-engineering",
+                    "expanded": "Social Engineering",
+                    "description": "Cyber events in which a malicious actor uses a set of techniques and tactics to persuade an individual to perform certain actions for various purposes.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Information gathering that are not identifiable by the other values defined in the subset.",
+                    "colour": "#F07930"
+                }
+            ]
+        },
+        {
+            "predicate": "malicious-code",
+            "entry": [
+                {
+                    "value": "backdoor",
+                    "expanded": "Backdoor",
+                    "description": "A type of malware that grants secondary access to a compromised information asset, allowing the attacker to access it remotely and perform arbitrary actions.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "banker",
+                    "expanded": "Banker",
+                    "description": "A type of malware that attempts to illicitly steal the credentials of bank clients or gain access to their financial information.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "bot",
+                    "expanded": "Bot",
+                    "description": "A computer program designed to fulfill a specific purpose, whether legitimate or malicious. In the latter case, it is referred to as bot malware, which are used to create a network of zombie computers, known as a botnet.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "coin-miner",
+                    "expanded": "Coin Miner",
+                    "description": "A type of malware that exploits the computing power of the target information asset to mine cryptocurrencies without the user's knowledge.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "exploit-kit",
+                    "expanded": "Exploit Kit",
+                    "description": "A collection of software tools designed to exploit vulnerabilities present in a network, a system, or an application. ",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "hacking-tool",
+                    "expanded": "Hacking Tool",
+                    "description": "A program designed to breach the security measures of an information asset. It is used both for legitimate activities and in unauthorized contexts or for illicit purposes.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "information-stealer",
+                    "expanded": "Information Stealer",
+                    "description": "A type of malware that aims to collect information about an information asset illegitimately. Malware known as keyloggers or spyware falls into this classification.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "loader",
+                    "expanded": "Loader",
+                    "description": "A type of malware that allows for the downloading and execution of additional malware on the compromised information asset. Malware known as droppers and downloaders fall into this classification.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "potentially-unwanted-program",
+                    "expanded": "Potentially Unwanted Program",
+                    "description": "Software that is unwanted according to the user's preferences. Although this classification does not indicate the presence of malware, they can pose a threat to the privacy and security of the system and the user.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "ransomware",
+                    "expanded": "Ransomware",
+                    "description": "A type of threat that aims to encrypt the data of the target information asset in order to compromise its availability and integrity.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "remote-access-tool",
+                    "expanded": "Remote Access Tool",
+                    "description": "A type of malware that allows an attacker to control a target information asset remotely. It allows for the execution of various unauthorized actions, such as data acquisition, file transfer, and the execution of arbitrary commands.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "rootkit",
+                    "expanded": "Rootkit",
+                    "description": "A typically sophisticated type of malware designed to infiltrate an operating system or application, masking its presence and gaining elevated access privileges.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "trojan",
+                    "expanded": "Trojan",
+                    "description": "A type of software that presents itself to the user in the form of a legitimate or otherwise harmless program, but which, once executed, aims to download and launch further malicious software on the target information asset. ",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "virus",
+                    "expanded": "Virus",
+                    "description": "A potentially harmful software that, when executed on an information asset, aims to self-replicate by modifying the running programs and altering their operations.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "webshell",
+                    "expanded": "Webshell",
+                    "description": "A type of script or program that is installed on a compromised web server in order to gain unauthorized and persistent access to the information asset.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "wiper",
+                    "expanded": "Wiper",
+                    "description": "A type of malware whose primary objective is to irreversibly delete data and files present on a compromised information asset.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "worm",
+                    "expanded": "Worm",
+                    "description": "A potentially harmful software that an attacker can exploit to replicate malware within an information asset in order to compromise its functionality.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "unknown",
+                    "expanded": "Unknown",
+                    "description": "A type of malicious code for which there is insufficient information to indicate its nature. The execution of malicious code or malware has been detected, but its type cannot yet be determined.",
+                    "colour": "#F07930"
+                }
+            ]
+        },
+        {
+            "predicate": "social-engineering",
+            "entry": [
+                {
+                    "value": "baiting",
+                    "expanded": "Baiting",
+                    "description": "Fraudulent activities in which a malicious actor attracts the victim by means of a lure, such as the promise of receiving a benefit or obtaining an advantage. ",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "phishing",
+                    "expanded": "Phishing",
+                    "description": "Cyber events in which a user is contacted, via email or other messaging tools, by a malicious actor with the aim of leading the victim to execute malicious code or visit fabricated resources.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "smishing",
+                    "expanded": "Smishing",
+                    "description": "Cyber events in which a user is contacted, via the sending of short text messages, SMS, by a malicious actor with the aim of leading the victim to execute malicious code or to visit fabricated resources.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "spear-phishing",
+                    "expanded": "Spear Phishing",
+                    "description": "A type of phishing targeting subjects of specific interest, involving the sending of a highly personalized message from an email account that appears familiar to the victim, with the intent of stealing sensitive information or inducing them to open/download malicious attachments or links.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "vishing",
+                    "expanded": "Vishing",
+                    "description": "Cyber events in which a user is contacted, via voice communication systems, by a criminal actor with the aim of leading the victim to execute malicious code or to steal data.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "watering-hole",
+                    "expanded": "Watering Hole",
+                    "description": "Cyber events in which an attacker aims to compromise a specific group of users by infecting websites that are known to be regularly visited by that group.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Social engineering that are not identifiable with the other values defined in the subset.",
+                    "colour": "#F07930"
+                }
+            ]
+        },
+        {
+            "predicate": "vulnerability",
+            "entry": [
+                {
+                    "value": "0-day-vulnerability",
+                    "expanded": "0-Day Vulnerability",
+                    "description": "A vulnerability that is not publicly known, and therefore could be exploited by an attacker to compromise an information system and undermine its integrity, confidentiality, and availability.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "n-day-vulnerability",
+                    "expanded": "n-Day Vulnerability",
+                    "description": "A 0-day vulnerability that has been made public for more than one day, regardless of the release of corrective software.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "security-misconfiguration",
+                    "expanded": "Security Misconfiguration",
+                    "description": "The incorrect configuration of an information asset which can lead to security risks and cause flaws that can be easily exploited by a cybercriminal to compromise a system.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "unwanted-exposed-services",
+                    "expanded": "Unwanted Exposed Services",
+                    "description": "The information asset involved in the security event exposes network services that are generally not recommended because they can expand the attack surface and can impact the security posture.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "weak-cryptography",
+                    "expanded": "Weak Cryptography",
+                    "description": "Cyber events related to the improper or incorrect use of security mechanisms related to encryption.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "proof-of-concept",
+                    "expanded": "Proof Of Concept",
+                    "description": "The availability of a technical demonstration created to validate the presence of a theoretical vulnerability, demonstrating how it can be exploited in a software or computer system.",
+                    "colour": "#F07930"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Vulnerability that are not identifiable with the other values defined in the subset.",
+                    "colour": "#F07930"
+                }
+            ]
+        },
+        {
+            "predicate": "adversary-motivation",
+            "entry": [
+                {
+                    "value": "destruction",
+                    "expanded": "Destruction",
+                    "description": "Cyber events in which an attacker has conducted malicious or illicit activities aimed at damaging an information asset in order to compromise its operation, interrupt the total or partial provision of services, or prevent authorized personnel from accessing it.",
+                    "colour": "#C10000"
+                },
+                {
+                    "value": "espionage",
+                    "expanded": "Espionage",
+                    "description": "Cyber events in which an attacker has conducted an unlawful activity aimed at acquiring sensitive, proprietary, or classified data/information in order to achieve economic gain, competitive advantage, or for political reasons. ",
+                    "colour": "#C10000"
+                },
+                {
+                    "value": "ideology",
+                    "expanded": "Ideology",
+                    "description": "Cyber events in which an attacker has conducted malicious or illicit activities to spread a message of an ideological nature to the affected organization, the users of the impacted service, or any third party.",
+                    "colour": "#C10000"
+                },
+                {
+                    "value": "influence-and-disinformation",
+                    "expanded": "Influence And Disinformation",
+                    "description": "Cyber events in which there is an intentional dissemination of inaccurate or distorted news or information in order to influence the actions and choices of someone.",
+                    "colour": "#C10000"
+                },
+                {
+                    "value": "profit",
+                    "expanded": "Profit",
+                    "description": "Cyber events in which an attacker or group carries out malicious or illicit actions in order to obtain, directly or indirectly, a profit.",
+                    "colour": "#C10000"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Adversary motivation that are not identifiable with the other values defined in the subset.",
+                    "colour": "#C10000"
+                }
+            ]
+        },
+        {
+            "predicate": "adversary-type",
+            "entry": [
+                {
+                    "value": "criminal",
+                    "expanded": "Criminal",
+                    "description": "Cyber events in which the attacker or group that caused the event can be categorized into the more generic type of \"criminal\" whose goals tend to generate profit from the actions carried out.",
+                    "colour": "#C10000"
+                },
+                {
+                    "value": "hacktivist",
+                    "expanded": "Hacktivist",
+                    "description": "Cyber events in which the subversive use of digital tools is employed to promote a political agenda or principles of social connotation.",
+                    "colour": "#C10000"
+                },
+                {
+                    "value": "insider",
+                    "expanded": "Insider",
+                    "description": "Cyber events in which an attacker uses their permissions or the knowledge acquired during routine work activities to carry out a cyberattack from within the network they operate.",
+                    "colour": "#C10000"
+                },
+                {
+                    "value": "nation-state",
+                    "expanded": "Nation State",
+                    "description": "Cyber events conducted by state entities or groups, or sponsored by the state, meaning groups that conduct advanced cyber operations on behalf of a government or a sovereign state.",
+                    "colour": "#C10000"
+                }
+            ]
+        },
+        {
+            "predicate": "abusive-content",
+            "entry": [
+                {
+                    "value": "disturbing-content",
+                    "expanded": "Disturbing Content",
+                    "description": "Any type of material or information disseminated through computer systems that may be considered offensive, inappropriate, harmful, or that may cause psychological or emotional distress.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "harmful-speech",
+                    "expanded": "Harmful Speech",
+                    "description": "Events involving any form of communication expressed through digital platforms that may cause harm, distress, or discrimination to individuals or groups.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Abusive content that are not identifiable with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                }
+            ]
+        },
+        {
+            "predicate": "asset-source-geography",
+            "entry": [
+                {
+                    "value": "italy",
+                    "expanded": "Italy",
+                    "description": "The IT assets from which malicious or illicit activities were conducted are located within the Italian national territory.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "The IT assets from which malicious or illicit activities were conducted are located outside the Italian national territory.",
+                    "colour": "#0070C0"
+                }
+            ]
+        },
+        {
+            "predicate": "involved-asset",
+            "entry": [
+                {
+                    "value": "hardware-network-device_router",
+                    "expanded": "Hardware Network Device Router",
+                    "description": "Device that directs traffic between two or more devices connected to the same network or subnets in a computer network.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-network-device_switch",
+                    "expanded": "Hardware Network Device Switch",
+                    "description": "Device within a computer network that manages the flow of data to and from connected computers.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-network-device_access-point",
+                    "expanded": "Hardware Network Device Access Point",
+                    "description": "Network hardware device that enables Wi-Fi devices to connect to a wired network.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-network-device_other",
+                    "expanded": "Hardware Network Device Other",
+                    "description": "Encompasses all Hardware_Network Device assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-iot-iiot_digital-camera",
+                    "expanded": "Hardware IOT IIOT Digital Camera",
+                    "description": "A digital camera is an electronic device capable of capturing and transmitting images and video.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-iot-iiot_other",
+                    "expanded": "Hardware IOT IIOT Other",
+                    "description": "Encompasses all Hardware_IoT/IIoT assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-security-appliance_firewall",
+                    "expanded": "Hardware Security Appliance Firewall",
+                    "description": "Network device or system that enables the monitoring and segregation of incoming and outgoing traffic.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-security-appliance_hardware-security-module",
+                    "expanded": "Hardware Security Appliance Hardware Security Module",
+                    "description": "Physical computing device that ensures the safeguarding and management of digital keys, as well as cryptographic processing.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-security-appliance_other",
+                    "expanded": "Hardware Security Appliance Other",
+                    "description": "Encompasses all Hardware_Security appliance assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-computer-system_server",
+                    "expanded": "Hardware Computer System Server",
+                    "description": "Physical device or computer system used for processing and managing information traffic over a network.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-computer-system_printer",
+                    "expanded": "Hardware Computer System Printer",
+                    "description": "Device that converts digital data into printed text on paper.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-computer-system_workstation",
+                    "expanded": "Hardware Computer System Workstation",
+                    "description": "Computer device designed to meet the processing needs of a single user.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-computer-system_mobile-device",
+                    "expanded": "Hardware Computer System Mobile Device",
+                    "description": "Electronic devices that enable user mobility, providing data processing or access capabilities that are not limited by the user's physical location.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-computer-system_data-storage",
+                    "expanded": "Hardware Computer System Data Storage",
+                    "description": "Electronic, electrostatic, or electrical hardware, or other elements that enable data input and retrieval.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-computer-system_other",
+                    "expanded": "Hardware Computer System Other",
+                    "description": "Encompasses all Hardware_Computer System assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-ot_remote-terminal-unit",
+                    "expanded": "Hardware OT Remote Terminal Unit",
+                    "description": "Remote units capable of receiving and decoding messages from the central control system.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-ot_human-machine-interface",
+                    "expanded": "Hardware OT Human Machine Interface",
+                    "description": "Interface that allows interaction with a controller to monitor processes, configure settings, and display information on the status and history of processes.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-ot_programmable-logic-controller",
+                    "expanded": "Hardware OT Programmable Logic Controller",
+                    "description": "Digital electronic system intended for industrial use.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-ot_field-device",
+                    "expanded": "Hardware OT Field Device",
+                    "description": "Equipment including actuators, sensors, network controllers, and signal converters designed for industrial use.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-ot_intelligent-elettronic-device",
+                    "expanded": "Hardware OT Intelligent Elettronic Device",
+                    "description": "Device that incorporates one or more processing units, capable of receiving and sending data/controls to or from other devices.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-ot_other",
+                    "expanded": "Hardware OT Other",
+                    "description": "Encompasses all Hardware_OT assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-other_satellite-system",
+                    "expanded": "Hardware Other Satellite System",
+                    "description": "Communication system capable of receiving signals from Earth and retransmitting them using a transponder, an integrated radio signal receiver and transmitter.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-other_unmanned-aerial-vehicle",
+                    "expanded": "Hardware Other Unmanned Aerial Vehicle",
+                    "description": "Remotely controlled aircraft that operate without a human pilot on board.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-other_rfid",
+                    "expanded": "Hardware Other RFID",
+                    "description": "Technology for automatic recognition, validation, and/or storage of information at a distance.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-other_nfc",
+                    "expanded": "Hardware Other NFC",
+                    "description": "Re-transmission technology offering short-range, bidirectional wireless connectivity.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-other",
+                    "expanded": "Hardware Other",
+                    "description": "Encompasses all Hardware_Other assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-virtualization-infrastructure_other",
+                    "expanded": "Hardware Virtualization Infrastructure Other",
+                    "description": "Encompasses all Hardware – Virtualization Infrastructure assets.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_firewall-os",
+                    "expanded": "Software Security System Firewall OS",
+                    "description": "Network and/or application system that monitors incoming and outgoing traffic, blocking unauthorized data traffic between two connected networks.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_antivirus",
+                    "expanded": "Software Security System Antivirus",
+                    "description": "Program that monitors a computer or network to detect all major types of malware and prevent or mitigate malware incidents.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_intrusion-detection-system",
+                    "expanded": "Software Security System Intrusion Detection System",
+                    "description": "Security system that monitors and analyzes network or system events to identify unauthorized attempts to access system resources.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_intrusion-prevention-system",
+                    "expanded": "Software Security System Intrusion Prevention System",
+                    "description": "System capable of detecting intrusive activity and that may also attempt to stop the activity.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_antispam",
+                    "expanded": "Software Security System Antispam",
+                    "description": "Programs or services that preventively block emails that may be classified as spam.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_security-information-and-event-management",
+                    "expanded": "Software Security System Security Information And Event Management",
+                    "description": "Application that collects security data from the components of the information system and presents it as actionable information through a unified interface.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_proxy",
+                    "expanded": "Software Security System Proxy",
+                    "description": "Proxy refers to software that receives requests from one or more clients (such as browsers or applications) and forwards them to the intended destinations on the Internet. The proxy can filter, modify, or log both requests and responses, thereby enhancing network security, privacy, and performance.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_certification-authority",
+                    "expanded": "Software Security System Certification Authority",
+                    "description": "Trusted entity that issues and revokes public key certificates.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_virtual-private-network",
+                    "expanded": "Software Security System Virtual Private Network",
+                    "description": "Virtual network built on top of existing networks that can provide a secure communication mechanism for IP data and information transmitted between networks.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_access-management",
+                    "expanded": "Software Security System Access Management",
+                    "description": "Suite of processes and applications that enable access management by authenticating, authorizing, and verifying access to IT applications and systems.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_web-application-firewall",
+                    "expanded": "Software Security System Web Application Firewall",
+                    "description": "Security device that monitors, filters, and blocks HTTP/HTTPS traffic to and from web applications.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-security-system_other",
+                    "expanded": "Software Security System Other",
+                    "description": "Encompasses all Software_Security Systems assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-data-management_database",
+                    "expanded": "Software Data Management Database",
+                    "description": "Repository of information or data stored and accessible electronically.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-data-management_blockchain",
+                    "expanded": "Software Data Management Blockchain",
+                    "description": "Subfamily of technologies that enable the creation and management of an open and distributed ledger for tracking transactions between parties.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-data-management_data-lake",
+                    "expanded": "Software Data Management Data Lake",
+                    "description": "Centralized repository that allows storing large amounts of data in their native format.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-data-management_backup",
+                    "expanded": "Software Data Management Backup",
+                    "description": "Process of securing the information of a computer system by creating copies of files and programs to facilitate their recovery.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-data-management_data-vault",
+                    "expanded": "Software Data Management Data Vault",
+                    "description": "Data warehousing model designed to provide a robust and scalable structure for integrating data from various sources.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-data-management_other",
+                    "expanded": "Software Data Management Other",
+                    "description": "Encompasses all Software_Data Management assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_supervisory-control-and-data-acquisition",
+                    "expanded": "Software OT Supervisory Control And Data Acquisition",
+                    "description": "Computerized system designed to remotely collect and process data, facilitating the control of complex processes and facilities.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_manufacturing-operations-management",
+                    "expanded": "Software OT Manufacturing Operations Management",
+                    "description": "Systems responsible for managing production operations.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_distributed-control-system",
+                    "expanded": "Software OT Distributed Control System",
+                    "description": "Control system employed in an industrial setting and linked to production systems located within the same geographic area.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_building-automation-system",
+                    "expanded": "Software OT Building Automation System",
+                    "description": "Building automation system designed to monitor and optimize the utilization and efficiency of related subsystems.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_physical-access-control-system",
+                    "expanded": "Software OT Physical Access Control System",
+                    "description": "Electronic physical security system that controls access to protected areas through appropriate authentication and/or authorization.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_communication-protocol",
+                    "expanded": "Software OT Communication Protocol",
+                    "description": "Set of rules that define the communication protocols between two or more entities.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_front-end-processor",
+                    "expanded": "Software OT Front End Processor",
+                    "description": "Gateway that enables the interfacing of HMIs with various subsystems.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_historian",
+                    "expanded": "Software OT Historian",
+                    "description": "Centralized database designed to collect, store, and support data analysis.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_manufacturing-execution-system",
+                    "expanded": "Software OT Manufacturing Execution System",
+                    "description": "Systems used to collect real-time data for optimizing production.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-ot_other",
+                    "expanded": "Software OT Other",
+                    "description": "Encompasses all Software_OT assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-operating-system_firmware",
+                    "expanded": "Software Operating System Firmware",
+                    "description": "The set of programs or microprograms stored in a read-only memory (ROM).",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-operating-system_windows",
+                    "expanded": "Software Operating System Windows",
+                    "description": "Proprietary operating system designed by Microsoft.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-operating-system_linux",
+                    "expanded": "Software Operating System Linux",
+                    "description": "Suite of free and open-source Unix-like operating systems based on the Linux Kernel.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-operating-system_macos",
+                    "expanded": "Software Operating System MacOS",
+                    "description": "Proprietary operating system developed by Apple Inc. based on Unix.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-operating-system_ios",
+                    "expanded": "Software Operating System iOS",
+                    "description": "Proprietary mobile operating system developed by Apple exclusively for its own hardware.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-operating-system_android",
+                    "expanded": "Software Operating System Android",
+                    "description": "Proprietary mobile operating system developed by Google.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-operating-system_other",
+                    "expanded": "Software Operating System Other",
+                    "description": "Encompasses all Software_Operating System assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-virtualization-software_hypervisor",
+                    "expanded": "Software Virtualization Software Hypervisor",
+                    "description": "Software, firmware, or hardware that creates and manages virtual machines (VMs).",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-virtualization-software_other",
+                    "expanded": "Software Virtualization Software Other",
+                    "description": "Encompasses all Software_Virtualization Software assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-iot-iiot_other",
+                    "expanded": "Software IOT IIOT Other",
+                    "description": "Encompasses all Software_IoT/IIoT assets.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_web-http-https-server",
+                    "expanded": "Software Application Web HTTP HTTPS Server",
+                    "description": "A device that provides World Wide Web (WWW) services over the Internet.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_mail-server-pop-smtp-imap",
+                    "expanded": "Software Application Mail Server Pop SMTP IMAP",
+                    "description": "A host that provides email functionalities. It stores incoming mail for distribution to users and forwards outgoing mail.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_naming-server-dns",
+                    "expanded": "Software Application Naming Server DNS",
+                    "description": "A device that maintains a list of domain names, as defined by the Domain Name System (DNS), and translates them into Internet Protocol addresses.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_s-ftp-server-application",
+                    "expanded": "Software Application SFTP Server Application",
+                    "description": "A standard used to access a network, list directories, and copy files. It provides user authentication and allows users to transfer files and list directories.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_remote-s-shell-server-application ",
+                    "expanded": "Software Application Remote S Shell Server Application ",
+                    "description": "A program that provides the client with an interactive shell, allowing the remote user to execute commands and manage the system as if they were physically present.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_ntp-server-application",
+                    "expanded": "Software Application NTP Server Application",
+                    "description": "An application that provides time synchronization services over a network using the NTP protocol.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_chat-irc-server-application",
+                    "expanded": "Software Application Chat IRC Server Application",
+                    "description": "A program running on a server that facilitates text-based communication among IRC clients.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_rpc-server-application",
+                    "expanded": "Software Application RPC Server Application",
+                    "description": "It enables the execution of a procedure on a remote server by transferring control flow and some arguments from the client to the server, executing the request, and returning the results.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_ldap-server-application",
+                    "expanded": "Software Application LDAP Server Application",
+                    "description": "A server-to-server interface for exchanging information between directories.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_rtsp-server-application",
+                    "expanded": "Software Application RTSP Server Application",
+                    "description": "A program running on a server that allows clients to control the playback of streaming audio and video streams.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-application_other",
+                    "expanded": "Software Application Other",
+                    "description": "Encompasses all Software_Application assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-other_third-party-library-framework",
+                    "expanded": "Software Other Third Party Library Framework",
+                    "description": "Reference libraries or frameworks from external sources.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-other_ai-service",
+                    "expanded": "Software Other AI Service",
+                    "description": "A service capable of replicating or replacing human activity through decisions made autonomously by computers or machines.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "software-other",
+                    "expanded": "Software Other",
+                    "description": "Encompasses all Software_Other assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "information-type_confidential-data",
+                    "expanded": "Information Type Confidential Data",
+                    "description": "Data that requires authorization to access.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "information-type_classified-data",
+                    "expanded": "Information Type Classified Data",
+                    "description": "Information, act, activity, or document to which one of the secrecy classifications provided by law has been assigned.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "information-type_internal-use-data",
+                    "expanded": "Information Type Internal Use Data",
+                    "description": "Data whose access is restricted to internal organization personnel only.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "information-type_public-data",
+                    "expanded": "Information Type Public Data",
+                    "description": "Data that is publicly available both locally and on the internet.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "information-type_judicial-data",
+                    "expanded": "Information Type Judicial Data",
+                    "description": "Data that includes information pertaining to judicial matters or current legal proceedings.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "information-type_other",
+                    "expanded": "Information Type Other",
+                    "description": "Encompasses all Information Types assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "people_employee",
+                    "expanded": "People Employee",
+                    "description": "Employees who work under a subordinate arrangement and receive remuneration for their work.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "people_contractor",
+                    "expanded": "People Contractor",
+                    "description": "An organization that offers expertise or services to other organizations for a defined period under a contractual agreement.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "people_external-consultant",
+                    "expanded": "People External Consultant",
+                    "description": "Professionals who offer expertise or services for a defined period under a contractual agreement.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "people_other",
+                    "expanded": "People Other",
+                    "description": "Encompasses all People assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "location_headquarter",
+                    "expanded": "Location Headquarter",
+                    "description": "A physical facility intended to house personnel and/or activities associated with the organization's operational activities.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "location_data-center",
+                    "expanded": "Location Data Center",
+                    "description": "Centralized facilities that host processing equipment, networking gear, and network infrastructure.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "location_management-infrastructure",
+                    "expanded": "Location Management Infrastructure",
+                    "description": "A physical object involved in controlling, monitoring, or analyzing production processes or supporting general activities.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "location_other",
+                    "expanded": "Location Other",
+                    "description": "Encompasses all Location assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "other_policy-and-procedure",
+                    "expanded": "Other Policy And Procedure",
+                    "description": "Documentation that includes the organization's general principles (Policies) or serves a limited purpose (Procedures).",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "other_documentation",
+                    "expanded": "Other Documentation",
+                    "description": "Documentation refers to all relevant documents that support the organization's business processes.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "other_privileged-account",
+                    "expanded": "Other Privileged Account",
+                    "description": "A privileged account is defined as a user account that holds a high-level role in terms of authorization in the management of a computer system.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "other_unprivileged-account",
+                    "expanded": "Other Unprivileged Account",
+                    "description": "A 'non-privileged account' refers to a user with restricted access and modification permissions for a system or network infrastructure.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Encompasses all additional assets that cannot be identified with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                }
+            ]
+        },
+        {
+            "predicate": "outlook",
+            "entry": [
+                {
+                    "value": "improving",
+                    "expanded": "Improving",
+                    "description": "An ongoing cyber event for which a reduction in impact is anticipated within the next six hours from the time of detection.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "stable",
+                    "expanded": "Stable",
+                    "description": "An ongoing cyber event for which the impact is expected to remain unchanged within the next six hours from the time of detection.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "worsening",
+                    "expanded": "Worsening",
+                    "description": "An ongoing cyber event for which the impact is expected to worsen within the next six hours from the time of detection.",
+                    "colour": "#0070C0"
+                }
+            ]
+        },
+        {
+            "predicate": "physical-security",
+            "entry": [
+                {
+                    "value": "sabotage",
+                    "expanded": "Sabotage",
+                    "description": "Any intentional action aimed at damaging, destroying, or altering the functioning of an IT resource or parts thereof. ",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "theft-and-burglary",
+                    "expanded": "Theft And Burglary",
+                    "description": "Cyber events resulting from the theft of an IT asset or parts thereof.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "unauthorized-access",
+                    "expanded": "Unauthorized Access",
+                    "description": "Cyber events that occur when anyone gains physical access to an IT asset without authorization.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Physical security that are not identifiable by the other values defined in the subset.",
+                    "colour": "#0070C0"
+                }
+            ]
+        },
+        {
+            "predicate": "vector",
+            "entry": [
+                {
+                    "value": "abuse-of-functionality",
+                    "expanded": "Abuse Of Functionality",
+                    "description": "Cyber events in which a malicious actor intentionally and unconventionally exploits the functionalities provided by an application or website.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "compromised-domain",
+                    "expanded": "Compromised Domain",
+                    "description": "The event has affected a legitimate internet domain that is being used to carry out cyber attacks.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "drive-by-compromise",
+                    "expanded": "Drive By Compromise",
+                    "description": "A cyber events in which a user, while browsing a website, is exposed to potential attacks, such as through the exploitation of application vulnerabilities of the device used or through the use of malicious code.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "e-mail",
+                    "expanded": "E-Mail",
+                    "description": "Cyber events that utilize an e-mail inbox (PEC, PEL, or PEO) as an attack vector.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "exploiting-vulnerabilities",
+                    "expanded": "Exploiting Vulnerabilities",
+                    "description": "Cyber events in which an attacker attempts or succeeds in exploiting vulnerabilities of an information asset, whether from the internet or an internal network, in order to gain illicit access and control.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "external-remote-services",
+                    "expanded": "External Remote Services",
+                    "description": "Cyber events in which a malicious actor exploits exposed remote services to access and/or persist within an information asset.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "hardware-additions",
+                    "expanded": "Hardware Additions",
+                    "description": "Cyber events in which a malicious actor utilizes hardware devices in an unauthorized manner to perform malicious or illicit actions, such as accessing an information asset or intercepting sensitive data. ",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "social-media",
+                    "expanded": "Social Media",
+                    "description": "Cyber events that utilize a social media platform as an attack vector to perpetrate malicious activity.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "supply-chain",
+                    "expanded": "Supply Chain",
+                    "description": "Cyber events that utilize, as attack vector, products or services provided by third parties within the supply chain which exhibit vulnerabilities or have been compromised prior to distribution to the end user. ",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "valid-accounts",
+                    "expanded": "Valid Accounts",
+                    "description": "Cyber events that utilize a valid account as an attack vector. The attacker can exploit illicitly the permissions of the affected user to perform malicious activities.",
+                    "colour": "#0070C0"
+                },
+                {
+                    "value": "other",
+                    "expanded": "Other",
+                    "description": "Cyber events related to Vectors that are not identifiable with the other values defined in the subset.",
+                    "colour": "#0070C0"
+                }
+            ]
+        }
+    ]
+}
